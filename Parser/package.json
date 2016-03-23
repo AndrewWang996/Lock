@@ -1,0 +1,16 @@
+{
+  "name": "parser",
+  "version": "1.0.0",
+  "description": "interfaces with the Python script that reads codes from keypad off the RaspberryPi + database to authenticate users.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.4.9",
+    "zerorpc": "^0.9.6",
+    "zmq": "^2.14.0"
+  }
+}
