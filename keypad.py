@@ -3,9 +3,38 @@ import zerorpc, sys
 c = zerorpc.Client()
 c.connect("tcp://127.0.0.1:4242")
 
+defaultCodeLength = 6
+
+def digit():
+        d = raw_input("enter digit")
+        return d
+
+
+def isDigit(d):
+        try:
+                return 0 <= int(d) <= 9
+        except:
+                return False
+
+def getCode():
+        
+        code = ""
+        
+        while len(code) < defaultCodeLength:
+                d = raw_input("enter digit")
+                if isDigit(d):
+                        code += str(d)
+                else:
+                        code = ""
+                        print "Code cleared"
+        
+        return c.authenticate(code)
+
+
 for code in ['985453', '079065', '878378', '101368']:
 	print c.authenticate(code)
 
+print getCode()
 
 '''
 for name in """Hi team: 
