@@ -122,7 +122,7 @@ if __name__ == '__main__':
     kp = keypad()
     GPIO.setup(9, GPIO.OUT)
 
-
+ 
     print getCode(kp)
      
     # Loop while waiting for a keypress
