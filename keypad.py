@@ -34,7 +34,7 @@ def getCode():
 for code in ['985453', '079065', '878378', '101368']:
 	print c.authenticate(code)
 
-print getCode() # test git
+
 
 '''
 for name in """Hi team: 
