@@ -1,0 +1,46 @@
+//
+   Created with JetBrains WebStorm.
+   User: andywang
+   Date: 3/26/16
+   Time: 7:16 PM
+   To change this template use File | Settings | File Templates.
+
+
+
+html
+    head
+        title my jade template
+    body
+        h1 Hello #{name}
+
+        .form-content-wrapper
+            .form-content
+                .form-input
+                    | First Name
+                    input#first-name
+
+                .form-input
+                    | Last Name
+                    input#last-name
+
+                .form-input
+                    | Cell Number
+                    input#cell-number
+
+                .form-input
+                    | Home Number
+                    input#home-number
+
+                button(id="user-registration-btn") Create New User
+
+        button(id="clear-users") Clear Users
+
+        a(href="/database") Go to all users
+
+script(src='//code.jquery.com/jquery-1.12.0.min.js')
+script(src='/js/registration.js')
+
+
+
+
+

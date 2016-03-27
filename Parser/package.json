@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.0",
+    "jade": "^1.11.0",
     "mongoose": "^4.4.9",
     "zerorpc": "^0.9.6",
     "zmq": "^2.14.0"
